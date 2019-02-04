@@ -1,0 +1,11 @@
+{
+  "name": "k8s_meetup",
+  "version": "1.0.0",
+  "description": "kubernetes meetup example app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Artur Panach",
+  "license": "ISC"
+}

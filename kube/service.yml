@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: hello-node
+spec:
+  selector:
+    app: hello-node
+  ports:
+  - protocol: TCP
+    port: 9089
+    targetPort: 8080
