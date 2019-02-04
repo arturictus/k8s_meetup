@@ -2,7 +2,7 @@
   "name": "k8s_meetup",
   "version": "1.0.0",
   "description": "kubernetes meetup example app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "test"
   },
