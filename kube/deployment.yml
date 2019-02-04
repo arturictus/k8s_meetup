@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello-node
-        image: google/nodejs-hello
+        image: arturictus/hello-node
         ports:
         - containerPort: 8080
