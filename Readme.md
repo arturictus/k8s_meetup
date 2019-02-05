@@ -21,7 +21,30 @@ cluster: group of nodes
 
 ### Kubectl
 
+```
+kubectl [action] [component type] ([component name])
+
+kubectl get pods
+kubectl describe deployment hello-node
+```
+- get
+- describe
+- create -f
+- replace -f
+- delete -f
+
 [cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
+#### Deploy
+```
+kubectl set image deployment/hello-node app=arturictus/hello-node:0.2.0  
+```
+
+### Scale
+
+```
+kubectl scale --replicas=3 deployment/hello-node  
+```
 
 #### Context == Cluster
 ```
@@ -35,4 +58,4 @@ kubectl config use-context minikube
 
 ### Tools
 
-- kubens
+- [kubectx](https://github.com/ahmetb/kubectx)

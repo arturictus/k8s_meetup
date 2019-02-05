@@ -5,7 +5,7 @@ metadata:
   labels:
     app: hello-node
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: hello-node
@@ -15,7 +15,7 @@ spec:
         app: hello-node
     spec:
       containers:
-      - name: hello-node
+      - name: app
         image: arturictus/hello-node
         ports:
         - containerPort: 8080
