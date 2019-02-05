@@ -16,6 +16,18 @@ spec:
     spec:
       containers:
       - name: app
-        image: arturictus/hello-node
+        image: arturictus/hello-node:0.1.0
         ports:
         - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 3
+          timeoutSeconds: 1
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 4
+          timeoutSeconds: 1

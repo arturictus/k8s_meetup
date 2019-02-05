@@ -37,7 +37,7 @@ kubectl describe deployment hello-node
 
 #### Deploy
 ```
-kubectl set image deployment/hello-node app=arturictus/hello-node:0.2.0  
+kubectl set image deployment/hello-node app=arturictus/hello-node:0.1.0  
 ```
 
 ### Scale
